@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+<style> h1{text-align:center; color:white; margin-top:60px} </style>
+<h1>Bienvenue {{app.session.get('pseudo')}} </h1>
+{{include ('contact/list_c.html.twig')}}
+{% endblock %}
